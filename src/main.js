@@ -9,3 +9,5 @@ document.querySelector('header').innerHTML = header.template
 header.script()
 document.querySelector('main').innerHTML = cerveza.template
 cerveza.script()
+document.querySelector('footer').innerHTML = footer.template
+footer.script()
