@@ -10,14 +10,13 @@ export const cervezas = {
     script: () => {
         console.log('Hola desde el componente cervezas')
 
+        let html = ''
+
         // Recorremos el array con los datos de las birras
         cervezasBD.forEach(element => {
-            // Para cada birra agregamos su template
-            const div = document.querySelector('div')
-            div.innerHTML = cerveza.template
-            document.querySelector('#divCervezas').appendChild(div)
-            cerveza.script(element.nombre)
+            html += cerveza(element.nombre)
         });
         
+        document.querySelector('#divCervezas').innerHTML = html
     }
 }

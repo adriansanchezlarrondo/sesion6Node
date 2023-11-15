@@ -1,10 +1,8 @@
-export const cerveza = {
-    template: //html
+export const cerveza = (nombreCerveza) => {
+    const template= //html
     `
-    <div id="cerveza" class="cerveza">Estrella</div>
-    `,
-    script: (nombreBirra) => {
-        console.log('Hola desde el componente cerveza')
-        document.querySelector('#cerveza').innerHTML = nombreBirra
-    }
+    <div id="cerveza" class="cerveza">${nombreCerveza}</div>
+    `;
+
+    return template
 }
