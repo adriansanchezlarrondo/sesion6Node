@@ -1,7 +1,7 @@
 import { cervezasBD } from './bd/cervezasBD.js'
 import { header } from './componentes/header.js'
-import { vistaHome } from './vistas/vistaHome.js'
 import { consoleCervezas } from './misFunciones/consoleCervezas.js'
+import { vistaHome } from './vistas/vistaHome.js'
 
 consoleCervezas(cervezasBD)
 
