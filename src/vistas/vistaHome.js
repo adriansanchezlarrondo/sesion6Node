@@ -1,17 +1,16 @@
-import { cervezasBD } from "../bd/cervezasBD.js"
+import { cervezas } from "../componentes/cervezas.js"
 
-export const cerveza = {
-    template: 
+export const vistaHome = {
+    template: // html
     `
-    <div id="card" style="width: 400px; padding:10px; margin:20px; border: 1px solid black;"></div>
+    <h1>Vista Home</h1>
+    <div id="cervezas" style="border: 1px solid black;">Aquí van las birras</div>
     `,
-    script: (nombreCerveza) => {
-        const tarjeta = 
-        `
-        <div class="card-body">
-            <h5 class="card-title">${nombreCerveza}</h5>
-        </div>
-        `
-        document.querySelector('#card').innerHTML = tarjeta
+    script: () => {
+        console.log('Hola desde vistaHome')
+        // Cargamos el componente cervezas
+        document.querySelector('#cervezas').innerHTML = cervezas.template
+        // Ejecutamos la lógica de cervezas
+        cervezas.script()
     }
 }

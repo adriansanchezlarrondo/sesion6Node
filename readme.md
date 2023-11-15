@@ -20,3 +20,14 @@ Tutorial de como configurar vscode para que con ctrl+s se formatee el codigo
 2. Creamos carpeta misfunciones y dentro creamos el archivo consoleCervezas.js(una funcion que usa el array). La exportamos
 3. Utilizamos la nomenclatura 'funciones flecha' (arrow functions)
 4. En main.js importamos consoleCervezas y la ejecutamos
+
+## Montando una SPA
+1. Creamos carpeta componentes con header.js, main.js y footer.js
+2. Creamos los componentes header y footer(archivos js con un template para inyectar)
+3. Desde main.js cargamos componentes y los inyectamos en las etiquetas header y footer.
+4. Creamos la vista home.js (dentro de la carpeta 'vistas') y la inyectamos en la etiqueta main
+
+## Componentes dentro de componentes
+1. Creamos un componte llamado cerveza.js que recibe el nombre de la cerveza y cuyo template es una tarjeta con el nombre de la cerveza.
+2. Creamos un componente cervezas.js que muestra, a partir de cervezasBD, un grupo de tarjetas 'cerveza'
+3. Añadimos el componente cervezas.js a la vistaHome
